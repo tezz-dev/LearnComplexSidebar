@@ -11,6 +11,13 @@
 		7B1FD6CC255ADC320039ED20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FD6CB255ADC320039ED20 /* ContentView.swift */; };
 		7B1FD6CE255ADC340039ED20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1FD6CD255ADC340039ED20 /* Assets.xcassets */; };
 		7B1FD6D1255ADC340039ED20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1FD6D0255ADC340039ED20 /* Preview Assets.xcassets */; };
+		7B1FD6DB255ADC6A0039ED20 /* Items.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FD6D9255ADC6A0039ED20 /* Items.xcdatamodeld */; };
+		7B1FD6E1255ADD4F0039ED20 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FD6E0255ADD4F0039ED20 /* PersistenceController.swift */; };
+		7B1FD6E7255AE23A0039ED20 /* CornerRdiusExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FD6E6255AE23A0039ED20 /* CornerRdiusExtension.swift */; };
+		7B1FD6EC255AE2E10039ED20 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FD6EB255AE2E10039ED20 /* SideBarView.swift */; };
+		7B1FD6F0255AE2F50039ED20 /* SideBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FD6EF255AE2F50039ED20 /* SideBarItem.swift */; };
+		7B1FD6F3255AE61C0039ED20 /* SideBarToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FD6F2255AE61C0039ED20 /* SideBarToggleButton.swift */; };
+		7B23156E255B9AE1003A9084 /* EnvObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23156D255B9AE1003A9084 /* EnvObj.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		7B1FD6CD255ADC340039ED20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B1FD6D0255ADC340039ED20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B1FD6D2255ADC340039ED20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B1FD6DA255ADC6A0039ED20 /* Items.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Items.xcdatamodel; sourceTree = "<group>"; };
+		7B1FD6E0255ADD4F0039ED20 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		7B1FD6E6255AE23A0039ED20 /* CornerRdiusExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRdiusExtension.swift; sourceTree = "<group>"; };
+		7B1FD6EB255AE2E10039ED20 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
+		7B1FD6EF255AE2F50039ED20 /* SideBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItem.swift; sourceTree = "<group>"; };
+		7B1FD6F2255AE61C0039ED20 /* SideBarToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarToggleButton.swift; sourceTree = "<group>"; };
+		7B23156D255B9AE1003A9084 /* EnvObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvObj.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,11 @@
 		7B1FD6C8255ADC320039ED20 /* LearnComplexSidebar */ = {
 			isa = PBXGroup;
 			children = (
+				7B1FD6EA255AE2C70039ED20 /* Views */,
+				7B1FD6E5255AE2230039ED20 /* HelperCode */,
+				7B1FD6E3255ADD590039ED20 /* Controllers */,
+				7B1FD6DD255ADC700039ED20 /* Model */,
 				7B1FD6C9255ADC320039ED20 /* LearnComplexSidebarApp.swift */,
-				7B1FD6CB255ADC320039ED20 /* ContentView.swift */,
 				7B1FD6CD255ADC340039ED20 /* Assets.xcassets */,
 				7B1FD6D2255ADC340039ED20 /* Info.plist */,
 				7B1FD6CF255ADC340039ED20 /* Preview Content */,
@@ -67,6 +84,42 @@
 				7B1FD6D0255ADC340039ED20 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B1FD6DD255ADC700039ED20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B1FD6D9255ADC6A0039ED20 /* Items.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B1FD6E3255ADD590039ED20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B1FD6E0255ADD4F0039ED20 /* PersistenceController.swift */,
+				7B23156D255B9AE1003A9084 /* EnvObj.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7B1FD6E5255AE2230039ED20 /* HelperCode */ = {
+			isa = PBXGroup;
+			children = (
+				7B1FD6E6255AE23A0039ED20 /* CornerRdiusExtension.swift */,
+			);
+			path = HelperCode;
+			sourceTree = "<group>";
+		};
+		7B1FD6EA255AE2C70039ED20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B1FD6CB255ADC320039ED20 /* ContentView.swift */,
+				7B1FD6EB255AE2E10039ED20 /* SideBarView.swift */,
+				7B1FD6EF255AE2F50039ED20 /* SideBarItem.swift */,
+				7B1FD6F2255AE61C0039ED20 /* SideBarToggleButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1FD6F0255AE2F50039ED20 /* SideBarItem.swift in Sources */,
+				7B1FD6DB255ADC6A0039ED20 /* Items.xcdatamodeld in Sources */,
+				7B23156E255B9AE1003A9084 /* EnvObj.swift in Sources */,
 				7B1FD6CC255ADC320039ED20 /* ContentView.swift in Sources */,
 				7B1FD6CA255ADC320039ED20 /* LearnComplexSidebarApp.swift in Sources */,
+				7B1FD6F3255AE61C0039ED20 /* SideBarToggleButton.swift in Sources */,
+				7B1FD6EC255AE2E10039ED20 /* SideBarView.swift in Sources */,
+				7B1FD6E1255ADD4F0039ED20 /* PersistenceController.swift in Sources */,
+				7B1FD6E7255AE23A0039ED20 /* CornerRdiusExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7B1FD6D9255ADC6A0039ED20 /* Items.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7B1FD6DA255ADC6A0039ED20 /* Items.xcdatamodel */,
+			);
+			currentVersion = 7B1FD6DA255ADC6A0039ED20 /* Items.xcdatamodel */;
+			path = Items.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7B1FD6BE255ADC320039ED20 /* Project object */;
 }
