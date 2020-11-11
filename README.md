@@ -7,7 +7,7 @@ git clone https://github.com/tezz-io/LearnComplexSidebar.git
 
 Go to **X-Code > File > Open**, Navigate to the ***LearnComplexSidebar*** folder generated on your system after cloning.
 
-Click on the ***LearnComplexSidebar*** inside the ***LearnComplexSidebar*** folder.
+Click on the ***LearnComplexSidebar.xcodeproj*** inside the ***LearnComplexSidebar*** folder.
 
 In the Project Navigator, Go to **LearnComplexSidebar > LearnComplexSidebarApp.swift**.
 
